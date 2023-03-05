@@ -2,35 +2,35 @@
     {
         "comida": "hamburguer",
         "preço": 40,
-        "pais": "brasil",
+        "pais": "Brasil",
         "id": 1,
         "imgUrl": "src/img/cardapio/hamburguer.png"
     },
     {
         "comida": "pizza",
         "preço": 50,
-        "pais": "italia",
+        "pais": "Italia",
         "id": 2,
         "imgUrl": "src/img/cardapio/pizza.png"
     },
     {
         "comida": "taco",
         "preço": 45,
-        "pais": "mexico",
+        "pais": "Mexico",
         "id": 3,
         "imgUrl": "src/img/cardapio/taco.png"
     },
     {
         "comida": "sushi",
         "preço": 60,
-        "pais": "japao",
+        "pais": "Japão",
         "id": 4,
         "imgUrl": "src/img/cardapio/sushi.png"
     },
     {
         "comida": "samosa",
         "preço": 25,
-        "pais": "india",
+        "pais": "Índia",
         "id": 5,
         "imgUrl": "src/img/cardapio/samosa.png"
     }
@@ -38,9 +38,51 @@
     {
         "comida": "samosa",
         "preço": 25,
-        "pais": "india",
+        "pais": "Índia",
         "id": 6,
         "imgUrl": "src/img/cardapio/hamburguer.png"
+    },
+    {
+        "comida": "drink",
+        "preço": 40,
+        "pais": "Taça",
+        "id": 7,
+        "imgUrl": "src/img/bebidas/drink.jpg"
+    },
+    {
+        "comida": "refrigerante",
+        "preço": 10,
+        "pais": "Lata",
+        "id": 8,
+        "imgUrl": "src/img/bebidas/refrigerante.jpg"
+    },
+    {
+        "comida": "cerveja",
+        "preço": 16,
+        "pais": "Garrafa",
+        "id": 9,
+        "imgUrl": "src/img/bebidas/cerveja.jpg"
+    },
+    {
+        "comida": "chopp",
+        "preço": 10,
+        "pais": "Tulipa",
+        "id": 10,
+        "imgUrl": "src/img/bebidas/chopp.jpg"
+    },
+    {
+        "comida": "agua",
+        "preço": 6,
+        "pais": "Garrafa",
+        "id": 11,
+        "imgUrl": "src/img/bebidas/agua.jpg"
+    },
+    {
+        "comida": "agua",
+        "preço": 6,
+        "pais": "Garrafa",
+        "id": 12,
+        "imgUrl": "src/img/bebidas/agua.jpg"
     }
     
 ]

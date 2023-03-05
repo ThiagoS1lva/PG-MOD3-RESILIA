@@ -12,8 +12,7 @@ import styles from './Slider.module.css'
 
 function Slider_M() {
     return (
-        <div>
-          <h4>React-Bootstrap Carousel Component</h4>
+        <div className='mt-5 mb-3'>
           <Carousel>
             <Carousel.Item>
               <img className={styles.Slider_img} src={boyce }/>

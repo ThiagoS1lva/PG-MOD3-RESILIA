@@ -38,6 +38,7 @@
   text-decoration: none;
   transition: color 200ms;
   transform-style: preserve-3d;
+  cursor: pointer;
 }
 .a:hover {
   color: #343e48;
