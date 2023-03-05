@@ -1,0 +1,42 @@
+.teste {
+    display: inline-block;
+}
+.teste figcaption {
+    position: absolute;
+    width: 45%;
+    top: 45%;
+    left: 2%;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-shadow: 0.09em 0.08em 0.03em #000000;
+}
+
+.button{
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding: 13px 13px 13px;
+    font-weight: 1000;
+    width: 25%;
+    cursor: pointer;
+    position: absolute;
+    top: 75%;
+    left: 4%;
+    border-radius: 4px;
+    transition: transform .2s ease-in-out;
+    background-color: #004F52;
+    color: #FF914D;
+}
+
+
+.button:hover{
+    background-color: #ee7225;
+    color: #004F52;
+    transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+    .button {
+        padding: 13px 30px 13px;
+    }
+}

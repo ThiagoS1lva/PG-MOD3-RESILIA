@@ -1,0 +1,46 @@
+[
+    {
+        "comida": "hamburguer",
+        "preço": 40,
+        "pais": "brasil",
+        "id": 1,
+        "imgUrl": "src/img/cardapio/hamburguer.png"
+    },
+    {
+        "comida": "pizza",
+        "preço": 50,
+        "pais": "italia",
+        "id": 2,
+        "imgUrl": "src/img/cardapio/pizza.png"
+    },
+    {
+        "comida": "taco",
+        "preço": 45,
+        "pais": "mexico",
+        "id": 3,
+        "imgUrl": "src/img/cardapio/taco.png"
+    },
+    {
+        "comida": "sushi",
+        "preço": 60,
+        "pais": "japao",
+        "id": 4,
+        "imgUrl": "src/img/cardapio/sushi.png"
+    },
+    {
+        "comida": "samosa",
+        "preço": 25,
+        "pais": "india",
+        "id": 5,
+        "imgUrl": "src/img/cardapio/samosa.png"
+    }
+    ,
+    {
+        "comida": "samosa",
+        "preço": 25,
+        "pais": "india",
+        "id": 6,
+        "imgUrl": "src/img/cardapio/hamburguer.png"
+    }
+    
+]
