@@ -35,8 +35,12 @@
     transform: scale(1.05);
 }
 
-@media (min-width: 768px) {
+@media screen and (max-width: 767px) {
     .button {
-        padding: 13px 30px 13px;
+        display: none;
     }
+    .teste figcaption {
+        display: none;
+    }
+
 }
