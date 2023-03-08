@@ -1,33 +1,22 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import logo from '../../img/logoSvg.svg'
 import style from './Navbar.module.css'
-import { Button, Card } from 'react-bootstrap'
+import { Button } from 'react-bootstrap'
 import { useShoppingCart } from '../../context/ShoppingCartContex';
-import Home from './Home';
-import { Carrinho } from '../pages/Carrinho';
-import Sobre from '../pages/Sobre'
-import Slider_M from './Slider_M'
-import React, { useRef } from 'react';
+import {Link} from 'react-router-dom'
 
 
 export function Navbar() {
     const { openCart, cartQuantity } = useShoppingCart()
-    const sobre = useRef(null);
-    const musica = useRef(null);
-    const cardapio = useRef(null);
-
-    const handleSobre = () => { window.scrollTo({ top: sobre.current.offsetTop - 113, behavior: "smooth" }) }
-    const handleMusica = () => { window.scrollTo({ top: musica.current.offsetTop - 113, behavior: "smooth" }) }
-    const handleCardapio = () => { window.scrollTo({ top: cardapio.current.offsetTop - 113, behavior: "smooth" }) }
 
     return (
         <>
             <ul className={style.ul}>
-                <img src={logo} width="85px" />
-                <li className={style.li}><a className={style.a} href="#" data-title="home">Home</a></li>
-                <li className={style.li}><a className={style.a} onClick={handleSobre} data-title="Sobre">Sobre</a></li>
-                <li className={style.li}><a className={style.a} onClick={handleMusica} data-title="Músicas">Músicas</a></li>
-                <li className={style.li}><a className={style.a} onClick={handleCardapio} data-title="Cardapio">Cardápio</a></li>
+                <Link to="/"><img src={logo} width="85px" /></Link>
+                <Link to="/"><li className={style.li}><a className={style.a} data-title="home">Home</a></li></Link>
+                <Link to="/Sobre"><li className={style.li}><a className={style.a} data-title="Sobre">Sobre</a></li></Link>
+                <Link to="/Musicas"><li className={style.li}><a className={style.a} data-title="Músicas">Músicas</a></li></Link>
+                <Link to="/Cardapio"><li className={style.li}><a className={style.a} data-title="Cardapio">Cardápio</a></li></Link>
                 <Button onClick={openCart} style={{ width: '3rem', height: "3rem", position: "relative" }} variant="outline-primary" className='rounded-circle'>
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -40,25 +29,6 @@ export function Navbar() {
                     </div>
                 </Button>
             </ul>
-
-            <Home />
-
-            <Card ref={sobre} style={{ width: '115px', left: '2%', backgroundColor: '#004F52' }}>
-                <Card.Title style={{ fontSize: '40px', color: 'white' }} >Sobre</Card.Title>
-            </Card>
-            <Sobre />
-
-            <Card ref={musica} style={{ width: '170px', left: '2%', backgroundColor: '#004F52' }}>
-                <Card.Title style={{ fontSize: '40px', color: 'white' }} >Músicas</Card.Title>
-            </Card>
-            <Slider_M />
-
-
-            <Card ref={cardapio} style={{ width: '170px', left: '2%', backgroundColor: '#004F52' }}>
-                <Card.Title style={{ fontSize: '40px', color: 'white' }} >Cardápio</Card.Title>
-            </Card>
-
-            <Carrinho />
         </>
     );
 }

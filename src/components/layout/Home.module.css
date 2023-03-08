@@ -35,6 +35,18 @@
     transform: scale(1.05);
 }
 
+.texto {
+    font-size: 17px;    
+    font-weight: 499;
+    line-height: 30px;
+}
+.musicaTexto {
+    font-size: 17px;    
+    font-weight: 499;
+    line-height: 35px;
+}
+
+
 @media screen and (max-width: 767px) {
     .button {
         display: none;
@@ -44,3 +56,7 @@
     }
 
 }
+.Container1 {
+    width: 50%;
+}
+

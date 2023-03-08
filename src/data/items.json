@@ -2,7 +2,7 @@
     {
         "comida": "hamburguer",
         "preço": 40,
-        "pais": "Brasil",
+        "pais": "Estados Unidos",
         "id": 1,
         "imgUrl": "src/img/cardapio/hamburguer.png"
     },
@@ -36,11 +36,11 @@
     }
     ,
     {
-        "comida": "samosa",
-        "preço": 25,
-        "pais": "Índia",
+        "comida": "Churrasquinho",
+        "preço": 10,
+        "pais": "Brasil",
         "id": 6,
-        "imgUrl": "src/img/cardapio/hamburguer.png"
+        "imgUrl": "src/img/cardapio/churrasquinho.png"
     },
     {
         "comida": "drink",
@@ -78,11 +78,11 @@
         "imgUrl": "src/img/bebidas/agua.jpg"
     },
     {
-        "comida": "agua",
-        "preço": 6,
-        "pais": "Garrafa",
+        "comida": "Vinho",
+        "preço": 20,
+        "pais": "Taça",
         "id": 12,
-        "imgUrl": "src/img/bebidas/agua.jpg"
+        "imgUrl": "src/img/bebidas/vinho.png.png"
     }
     
 ]
