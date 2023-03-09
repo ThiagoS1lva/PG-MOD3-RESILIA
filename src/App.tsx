@@ -1,10 +1,11 @@
 import { ShoppingCartProvider } from './context/ShoppingCartContex'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import React from 'react'
 import Home from './components/layout/Home'
 import Sobre from './components/pages/Sobre'
 import Musicas from './components/pages/Musicas'
 import {Carrinho} from './components/pages/Carrinho'
+import  NewProjects  from './components/pages/NewProjects'
+import Produtos from './components/pages/Produtos';
 
 export function App() {
 
@@ -18,6 +19,10 @@ export function App() {
       <Route path='/Musicas' element={<ShoppingCartProvider><Musicas/></ShoppingCartProvider>}></Route>
 
       <Route path='/Cardapio' element={<ShoppingCartProvider><Carrinho/></ShoppingCartProvider>}></Route>
+      
+      <Route path='/novo' element={<ShoppingCartProvider><NewProjects/></ShoppingCartProvider>}></Route>
+
+      <Route path='/Produtos' element={<ShoppingCartProvider><Produtos/></ShoppingCartProvider>}></Route>
     </Routes>
 
   )

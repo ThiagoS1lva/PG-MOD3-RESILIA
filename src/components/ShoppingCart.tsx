@@ -17,7 +17,7 @@ export function ShoppingCart({ isOpen }: ShoppingCartProps) {
     <Offcanvas show={isOpen} onHide={closeCart} placement="end">
       {/* Cabeçalho do carrinho */}
       <Offcanvas.Header closeButton>
-        <Offcanvas.Title>Carrinho</Offcanvas.Title>
+        <Offcanvas.Title style={{fontFamily: 'Poppins'}}>Carrinho</Offcanvas.Title>
       </Offcanvas.Header>
       {/* Corpo do carrinho */}
       <Offcanvas.Body>
@@ -27,7 +27,7 @@ export function ShoppingCart({ isOpen }: ShoppingCartProps) {
             <CartItem key={item.id} {...item} />
           ))}
           {/* Exibe o total do carrinho */}
-          <div className="ms-auto fw-bold fs-5">
+          <div style={{fontFamily: 'Raleway'}} className="ms-auto fw-bold fs-5">
             Total{" "}
             {formatCurrency(
               cartItems.reduce((total, cartItem) => {

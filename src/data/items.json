@@ -1,34 +1,34 @@
 [
     {
-        "comida": "hamburguer",
+        "comida": "Hamburguer",
         "preço": 40,
-        "pais": "Estados Unidos",
+        "pais": "EUA",
         "id": 1,
         "imgUrl": "src/img/cardapio/hamburguer.png"
     },
     {
-        "comida": "pizza",
+        "comida": "Pizza",
         "preço": 50,
         "pais": "Italia",
         "id": 2,
         "imgUrl": "src/img/cardapio/pizza.png"
     },
     {
-        "comida": "taco",
+        "comida": "Taco",
         "preço": 45,
         "pais": "Mexico",
         "id": 3,
         "imgUrl": "src/img/cardapio/taco.png"
     },
     {
-        "comida": "sushi",
+        "comida": "Sushi",
         "preço": 60,
         "pais": "Japão",
         "id": 4,
         "imgUrl": "src/img/cardapio/sushi.png"
     },
     {
-        "comida": "samosa",
+        "comida": "Samosa",
         "preço": 25,
         "pais": "Índia",
         "id": 5,
@@ -43,35 +43,35 @@
         "imgUrl": "src/img/cardapio/churrasquinho.png"
     },
     {
-        "comida": "drink",
+        "comida": "Drink",
         "preço": 40,
         "pais": "Taça",
         "id": 7,
         "imgUrl": "src/img/bebidas/drink.jpg"
     },
     {
-        "comida": "refrigerante",
+        "comida": "Refrigerante",
         "preço": 10,
         "pais": "Lata",
         "id": 8,
         "imgUrl": "src/img/bebidas/refrigerante.jpg"
     },
     {
-        "comida": "cerveja",
+        "comida": "Cerveja",
         "preço": 16,
         "pais": "Garrafa",
         "id": 9,
         "imgUrl": "src/img/bebidas/cerveja.jpg"
     },
     {
-        "comida": "chopp",
+        "comida": "Chopp",
         "preço": 10,
         "pais": "Tulipa",
         "id": 10,
         "imgUrl": "src/img/bebidas/chopp.jpg"
     },
     {
-        "comida": "agua",
+        "comida": "Água",
         "preço": 6,
         "pais": "Garrafa",
         "id": 11,

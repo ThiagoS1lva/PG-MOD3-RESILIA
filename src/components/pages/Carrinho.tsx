@@ -13,7 +13,7 @@ export function Carrinho() {
         <>
             <Navbar />
             <Card style={{ width: '250px', left: '42%', backgroundColor: '#004F52', textAlign: 'center', marginTop: '2%', paddingRight: '0' }}>
-                <Card.Title style={{ fontSize: '40px', color: 'white' }} >Cardápio</Card.Title>
+                <Card.Title style={{ fontSize: '40px', color: 'white', fontFamily: 'Poppins'}} >Cardápio</Card.Title>
             </Card >
             <Row md={2} xs={1} lg={3} className="g-3 mt-5 me-3 ms-3">
 

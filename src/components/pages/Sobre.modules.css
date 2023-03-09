@@ -1,23 +1,6 @@
-.Row-wrapper {
-    height: 30em;
-    width: 100vw;
- }
- .Row-text {
-    position: relative;
-    width: 30em;
-    height: 20em;
- }
- .show {
-    position: absolute;
-    left: -30em;
-    width: 30em;
-    height: 20em;
-    -webkit-animation: slide-in 1s forwards;
-    animation: slide-in 1s forwards;
- }
- @-webkit-keyframes slide-in {
-   100% { left: 0 }
- }
- @keyframes slide-in {
-   100% { left: 0 }
- }
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+.teste {
+    background-color: red;
+}

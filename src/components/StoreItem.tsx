@@ -26,9 +26,9 @@ export function StoreItem({ id, comida, preço, pais, imgUrl }: StoreItemProps) 
             <Card.Body className="d-flex flex-column">
                 <Card.Title className="d-flex justify-content-between align-items-baseline mb-4">
                     {/* Renderiza o nome da comida, o país e o preço */}
-                    <span className="fs-2">{comida}</span>
-                    <span className="fs3">{pais}</span>
-                    <span className="ms-2 text-muted">{formatCurrency(preço)}</span>
+                    <span className="fs-2" style={{fontFamily: 'Raleway'}}>{comida}</span>
+                    <span className="fs3" style={{fontFamily: 'Raleway'}}>{pais}</span>
+                    <span className="ms-2" style={{fontFamily: 'Poppins'}}>{formatCurrency(preço)}</span>
                 </Card.Title>
                 <div className="mt-auto">
                     {/* Verifica se o item não está no carrinho */}

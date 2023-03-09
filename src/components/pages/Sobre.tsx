@@ -13,6 +13,7 @@ import pub from '../../img/pub.jpg'
 import Footer from '../layout/Footer'
 
 
+
 function Sobre() {
    
 
@@ -20,11 +21,11 @@ function Sobre() {
         return (
             <>
                 <Navbar />
-                <Container fluid='sm' className='mt-5'>
+                <Container className='mt-5'>
                     <Row className='mb-5'>
                         <Col>
-                            <h2>Bem-vindos ao nosso pub!</h2>
-                            <p>Este é o lugar perfeito para aqueles que procuram uma experiência única em um ambiente acolhedor. Nosso pub tem uma história de 27 anos e se tornou um ponto de encontro para pessoas de todas as idades e origens. Com paredes de tijolos expostos e mesas de madeira desgastadas pelo tempo, nosso pub tem um charme especial que torna a sua visita ainda mais agradável.</p>
+                            <h2 style={{fontFamily: 'Raleway'}}>Bem-vindos ao nosso pub!</h2>
+                            <p style={{fontFamily: 'Poppins'}}>Este é o lugar perfeito para aqueles que procuram uma experiência única em um ambiente acolhedor. Nosso pub tem uma história de 27 anos e se tornou um ponto de encontro para pessoas de todas as idades e origens. Com paredes de tijolos expostos e mesas de madeira desgastadas pelo tempo, nosso pub tem um charme especial que torna a sua visita ainda mais agradável.</p>
                         </Col>
                         <Col>
                             <img src={pub} alt="" width='100%' />
@@ -36,15 +37,15 @@ function Sobre() {
                             <img src={comida} alt="" width='100%' />
                         </Col>
                         <Col>
-                            <h2>Uma grande variedade de pratos de diferentes países</h2>
-                            <p>Quando se trata de comida, temos uma seleção de pratos de diferentes países preparados por nossos talentosos chefs. De tacos mexicanos a sushi japonês, temos algo para todos os gostos. Além disso, temos opções vegetarianas e veganas, bem como sobremesas deliciosas para completar a sua refeição. (Opção vegana disponivel apenas no local)</p>
+                            <h2 style={{fontFamily: 'Raleway'}}>Uma grande variedade de pratos de diferentes países</h2>
+                            <p style={{fontFamily: 'Poppins'}}>Quando se trata de comida, temos uma seleção de pratos de diferentes países preparados por nossos talentosos chefs. De tacos mexicanos a sushi japonês, temos algo para todos os gostos. Além disso, temos opções vegetarianas e veganas, bem como sobremesas deliciosas para completar a sua refeição. (Opção vegana disponivel apenas no local)</p>
                         </Col>
                     </Row>
 
                     <Row>
                         <Col>
-                            <h2>Um bar com uma grande variedade de bebidas</h2>
-                            <p>
+                            <h2 style={{fontFamily: 'Raleway'}}>Um bar com uma grande variedade de bebidas</h2>
+                            <p style={{fontFamily: 'Poppins'}}>
                                 Além da nossa deliciosa comida, nosso bar também oferece uma grande variedade de bebidas, incluindo cervejas importadas e nacionais, vinhos e coquetéis. Nossos bartenders experientes estão sempre prontos para preparar uma bebida deliciosa para você. Venha nos visitar e experimente a nossa seleção de bebidas e pratos internacionais. Estamos ansiosos para recebê-lo em nosso pub!
                             </p>
                         </Col>
@@ -54,8 +55,8 @@ function Sobre() {
                     </Row>
                 </Container>
 
-                <Card style={{ width: '250px', left: '42%', backgroundColor: '#004F52', textAlign: 'center', marginTop: '2%' }}>
-                    <Card.Title style={{ fontSize: '40px', color: 'white' }} >Contate-nos</Card.Title>
+                <Card style={{ width: '265px', left: '42%', backgroundColor: '#004F52', textAlign: 'center', marginTop: '2%' }}>
+                    <Card.Title style={{ fontSize: '40px', color: 'white', fontFamily: 'Poppins'}} >Contate-nos</Card.Title>
                 </Card>
                 <Container fluid="sm">
                     <Form.Label className='mt-5'>Nome de usuário</Form.Label>

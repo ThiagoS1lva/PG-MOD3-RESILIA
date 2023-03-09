@@ -1,0 +1,125 @@
+{
+  "cardapio": [
+    {
+      "comida": "hamburguer",
+      "preço": 40,
+      "pais": "brasil",
+      "id": 1
+    },
+    {
+      "comida": "pizza",
+      "preço": 50,
+      "pais": "italia",
+      "id": 2
+    },
+    {
+      "comida": "taco",
+      "preço": 45,
+      "pais": "mexico",
+      "id": 3
+    },
+    {
+      "comida": "sushi",
+      "preço": 60,
+      "pais": "japao",
+      "id": 4
+    },
+    {
+      "comida": "samosa",
+      "preço": 25,
+      "pais": "india",
+      "id": 5
+    }
+  ],
+  "bebidas": [
+    {
+      "bebida": "drink",
+      "preço": 40,
+      "tipo": "taça",
+      "id": 1
+    },
+    {
+      "bebida": "refrigerante",
+      "preço": 10,
+      "tipo": "lata",
+      "id": 2
+    },
+    {
+      "bebida": "cerveja",
+      "preço": 16,
+      "tipo": "garrafa",
+      "id": 3
+    },
+    {
+      "bebida": "chopp",
+      "preço": 10,
+      "tipo": "tulipa",
+      "id": 4
+    },
+    {
+      "bebida": "agua",
+      "preço": 6,
+      "tipo": "garrafa",
+      "id": 5
+    }
+  ],
+  "musica": [
+    {
+      "segunda": "rock",
+      "banda": "soad",
+      "taxa": "10",
+      "id": 1
+    },
+    {
+      "terça": "karaoke",
+      "banda": "publico",
+      "taxa": "5",
+      "id": 2
+    },
+    {
+      "quarta": "jazz",
+      "banda": "ella",
+      "taxa": "10",
+      "id": 3
+    },
+    {
+      "quinta": "cover",
+      "banda": "boyce",
+      "taxa": "12",
+      "id": 4
+    },
+    {
+      "sexta": "antigas",
+      "banda": "cantores",
+      "taxa": "10",
+      "id": 5
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "cardapio"
+    },
+    {
+      "id": 2,
+      "name": "bebidas"
+    },
+    {
+      "id": 3,
+      "name": "musica"
+    }
+  ],
+  "novosProdutos": [
+    {
+      "name": "Burguer",
+      "preço": "200",
+      "category": {
+        "id": "1",
+        "name": "cardapio"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 1
+    }
+  ]
+}
