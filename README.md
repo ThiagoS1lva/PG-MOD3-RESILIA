@@ -4,13 +4,15 @@
 
 ### O objetivo do projeto é criar um website de pub que terá informações do cardapio, das bebidas e das bandas hospedadas em um .JSON, além disso, também contém um carrinho de compras onde o cliente poderá escolher seu produto do cardapio.
 
-### COMANDOS
+
 É necessário ter:
 * Vite.app
 * Node.js
 
-*npm install
-
+### COMANDOS
+* npm install
+* npm run backend 
+* npm run dev
 
 A webpage pode ser acessada por esse link:
 
