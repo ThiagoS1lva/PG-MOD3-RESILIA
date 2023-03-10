@@ -17,16 +17,19 @@ function Musicas() {
         <>
             <Navbar />
             <Card style={{ width: '270px', left: '42%', backgroundColor: '#004F52', textAlign: 'center', marginTop: '2%', paddingRight: '0' }}>
-                <Card.Title style={{ fontSize: '40px', color: 'white',fontFamily: 'Poppins' }} >Cronograma semanal</Card.Title>
+                <Card.Title style={{ fontSize: '40px', color: 'white', fontFamily: 'Poppins' }} >Cronograma semanal</Card.Title>
             </Card>
+
+
+
             <Container fluid>
-                <Row className='mt-5'>
+                <Row className='mt-5 justify-content-center'>
                     <Col>
                         <Card >
                             <Card.Img variant="top" src={system} />
                             <Card.Body>
-                                <Card.Title style={{fontFamily: 'Raleway'}}>System of a Down (2º Feira)</Card.Title>
-                                <Card.Text style={{fontFamily: 'Poppins'}}>
+                                <Card.Title style={{ fontFamily: 'Raleway' }}>System of a Down (2ª Feira)</Card.Title>
+                                <Card.Text style={{ fontFamily: 'Poppins' }}>
                                     Horário: 19:00 - 21:30
                                 </Card.Text>
                             </Card.Body>
@@ -36,8 +39,8 @@ function Musicas() {
                         <Card >
                             <Card.Img variant="top" src={kara} />
                             <Card.Body>
-                                <Card.Title style={{fontFamily: 'Raleway'}}>Karaoke (3º Feira)</Card.Title>
-                                <Card.Text style={{fontFamily: 'Poppins'}}>
+                                <Card.Title style={{ fontFamily: 'Raleway' }}>Karaoke (3ª Feira)</Card.Title>
+                                <Card.Text style={{ fontFamily: 'Poppins' }}>
                                     Horário: 17:00 - 22:00
                                 </Card.Text>
                             </Card.Body>
@@ -47,8 +50,8 @@ function Musicas() {
                         <Card>
                             <Card.Img variant="top" src={jazz} />
                             <Card.Body>
-                                <Card.Title style={{fontFamily: 'Raleway'}}>Ella Fitzgerald - Jazz (4º Feira)</Card.Title>
-                                <Card.Text style={{fontFamily: 'Poppins'}}>
+                                <Card.Title style={{ fontFamily: 'Raleway' }}>Ella Fitzgerald - Jazz (4ª Feira)</Card.Title>
+                                <Card.Text style={{ fontFamily: 'Poppins' }}>
                                     Horário: 18:00 - 21:00
                                 </Card.Text>
                             </Card.Body>
@@ -59,12 +62,12 @@ function Musicas() {
 
                 <Row className='mt-5 justify-content-center'>
                     <Col>
-                        <Card style={{ width: '30' }} >
+                        <Card >
                             <Card.Img variant="top" src={antigas} />
                             <Card.Body>
-                                <Card.Title style={{fontFamily: 'Raleway'}}>90's 2000's (5º Feira)</Card.Title>
-                                <Card.Text style={{fontFamily: 'Poppins'}}>
-                                    Horario: 19:00 - 20:30
+                                <Card.Title style={{ fontFamily: 'Raleway' }}>90's 2000's (5ª Feira)</Card.Title>
+                                <Card.Text style={{ fontFamily: 'Poppins' }}>
+                                    Horário: 19:00 - 20:30
                                 </Card.Text>
                             </Card.Body>
                         </Card>
@@ -73,9 +76,9 @@ function Musicas() {
                         <Card >
                             <Card.Img variant="top" src={avenue} />
                             <Card.Body>
-                                <Card.Title style={{fontFamily: 'Raleway'}}>Boyce Avenue (6º Feira)</Card.Title>
-                                <Card.Text style={{fontFamily: 'Poppins'}}>
-                                    Horario: 19:00 - 20:30
+                                <Card.Title style={{ fontFamily: 'Raleway' }}>Boyce Avenue (6ª Feira)</Card.Title>
+                                <Card.Text style={{ fontFamily: 'Poppins' }}>
+                                    Horário: 19:00 - 20:30
                                 </Card.Text>
                             </Card.Body>
                         </Card>
@@ -84,16 +87,16 @@ function Musicas() {
                         <Card >
                             <Card.Img variant="top" src={monkey} />
                             <Card.Body>
-                                <Card.Title style={{fontFamily: 'Raleway'}}>Karaoke (Sabado)</Card.Title>
-                                <Card.Text style={{fontFamily: 'Poppins'}}>
-                                    Horario: 16:00 - 20:30
+                                <Card.Title style={{ fontFamily: 'Raleway' }}>Karaokê (Sábado)</Card.Title>
+                                <Card.Text style={{ fontFamily: 'Poppins' }}>
+                                    Horário: 16:00 - 20:30
                                 </Card.Text>
                             </Card.Body>
                         </Card>
                     </Col>
                 </Row>
             </Container>
-            <Footer/>
+            <Footer />
         </>
 
     )

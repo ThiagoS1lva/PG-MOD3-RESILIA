@@ -22,7 +22,7 @@ export function StoreItem({ id, comida, preço, pais, imgUrl }: StoreItemProps) 
     // Renderiza um cartão com as informações do item
     return (
         <Card className="h-100">
-            <Card.Img variant="Top" src={imgUrl} height="400px" style={{ objectFit: "cover" }} />
+            <Card.Img variant="Top" src={imgUrl}  />
             <Card.Body className="d-flex flex-column">
                 <Card.Title className="d-flex justify-content-between align-items-baseline mb-4">
                     {/* Renderiza o nome da comida, o país e o preço */}

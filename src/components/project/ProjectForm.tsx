@@ -39,6 +39,7 @@ function ProjectForm({ handleSubmit, btnText, projectData }: ProjectForm) {
         setProject({ ...project, [e.target.name]: e.target.value })
     }
 
+
     function handleCategory(e) {
         setProject({
             ...project,
@@ -52,7 +53,11 @@ function ProjectForm({ handleSubmit, btnText, projectData }: ProjectForm) {
         <>
             <form onSubmit={submit} className={styles.form}>
                 <Input type="text" text="Nome" name="name" placeholder='Insira o nome do produto' handleOnChange={handleChange} value={project.name ? project.name : ''} />
+
                 <Input type="number" text="Valor" name="preço" placeholder='Digite o valor' handleOnChange={handleChange} value={project.preço ? project.preço : ''} />
+
+                <Input type="file" name="image" text='Imagem' placeholder="Imagem" handleOnChange='e, i' />
+                
                 <Select name="category_id" text="Selecione a categoria" options={categories} handleOnChange={handleCategory} value={project.category ? project.category.id : ''}/>
                 <SubmitButton text={btnText} />
 

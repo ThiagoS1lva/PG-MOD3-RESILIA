@@ -111,8 +111,8 @@
   ],
   "novosProdutos": [
     {
-      "name": "Burguer",
-      "preço": "200",
+      "name": "asd",
+      "preço": "123",
       "category": {
         "id": "1",
         "name": "cardapio"
@@ -120,6 +120,16 @@
       "cost": 0,
       "services": [],
       "id": 1
+    },
+    {
+      "cost": 0,
+      "services": [],
+      "id": 2
+    },
+    {
+      "cost": 0,
+      "services": [],
+      "id": 3
     }
   ]
 }

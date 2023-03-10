@@ -52,7 +52,7 @@ export function Navbar() {
                     <Link to="/"><img src={logo} width="85px" /></Link>
                     <Link to="/" className={style.li}><li ><a className={style.a} data-title="home">Home</a></li></Link>
                     <Link to="/Sobre" className={style.li}><li><a className={style.a} data-title="Sobre">Sobre</a></li></Link>
-                    <Link to="/Musicas" className={style.li}><li ><a className={style.a} data-title="Músicas">Músicas</a></li></Link>
+                    <Link to="/Musicas" className={style.li}><li ><a className={style.a} data-title="Atrações">Atrações</a></li></Link>
                     <Link to="/Cardapio" className={style.li}><li ><a className={style.a} data-title="Cardapio">Cardápio</a></li></Link>
                     <Link to="/novo" className={style.li}><li ><a className={style.a} data-title="Adicionar">Adicionar</a></li></Link>
                     <Button onClick={openCart} style={{ width: '3rem', height: "3rem", position: "relative" }} variant="outline-primary" className='rounded-circle'>
