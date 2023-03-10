@@ -66,6 +66,9 @@
     .teste figcaption {
         display: none;
     }
+    .teste img {
+        margin-top: 20%;
+    }
 
 }
 

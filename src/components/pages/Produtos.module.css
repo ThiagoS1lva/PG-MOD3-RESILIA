@@ -12,3 +12,8 @@
     display: flex;
     justify-content: flex-start;
 }
+@media screen and (max-width: 767px) { 
+    .Container_produto {
+        flex-direction: column;
+    }
+}

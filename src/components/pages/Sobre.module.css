@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+.row_sobre {
+    margin-bottom: 5%;
+}
+
+.container_sobre {
+    margin-top: 5%;
+}
+
+
+.card {
+    width: 265px;
+    left: 42%;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.card_title {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(250, 246, 246);
+    font-family: Poppins;
+}
+
+@media screen and (max-width: 767px) {
+    .row_sobre {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container_sobre {
+        margin-top: 20%;
+    }
+    .card {
+        left: 10%;
+    }
+}

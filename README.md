@@ -4,11 +4,17 @@
 
 ### O objetivo do projeto é criar um website de pub que terá informações do cardapio, das bebidas e das bandas hospedadas em um .JSON, além disso, também contém um carrinho de compras onde o cliente poderá escolher seu produto do cardapio.
 
+### COMANDOS
+É necessário ter:
+* Vite.app
+* Node.js
+
+*npm install
+
 
 A webpage pode ser acessada por esse link:
 
-Métodos
-Podem ser utilizados os seguintes métodos na rota:
+Métodos que podem ser utilizados:
 
 * GET
 * PUT
@@ -17,6 +23,10 @@ Podem ser utilizados os seguintes métodos na rota:
 
 ## 📋 Tecnologias utilizadas
 
+* Vite APP;
+* HTML;
+* CSS;
+*
 * React;
 * React DOM;
 * React Router DOM;
@@ -26,7 +36,7 @@ Podem ser utilizados os seguintes métodos na rota:
 
 O Projeto consome dados de um json server hospedado localmente na maquina.
 
-Integrantes:
+### Integrantes:
 * MARTHA LUCENA
 * THIAGO OLIVEIRA DA SILVA
-* Quaresma 
+* GABRIEL QUARESMA 

@@ -12,6 +12,8 @@ import comida from '../../img/comidaPub.jpg'
 import pub from '../../img/pub.jpg'
 import Footer from '../layout/Footer'
 
+import styles from './Sobre.module.css'
+
 
 
 function Sobre() {
@@ -21,8 +23,8 @@ function Sobre() {
         return (
             <>
                 <Navbar />
-                <Container className='mt-5'>
-                    <Row className='mb-5'>
+                <Container className={styles.container_sobre}>
+                    <Row className={styles.row_sobre}>
                         <Col>
                             <h2 style={{fontFamily: 'Raleway'}}>Bem-vindos ao nosso pub!</h2>
                             <p style={{fontFamily: 'Poppins'}}>Este é o lugar perfeito para aqueles que procuram uma experiência única em um ambiente acolhedor. Nosso pub tem uma história de 27 anos e se tornou um ponto de encontro para pessoas de todas as idades e origens. Com paredes de tijolos expostos e mesas de madeira desgastadas pelo tempo, nosso pub tem um charme especial que torna a sua visita ainda mais agradável.</p>
@@ -32,7 +34,7 @@ function Sobre() {
                         </Col>
                     </Row>
 
-                    <Row className='mb-5'>
+                    <Row className={styles.row_sobre}>
                         <Col>
                             <img src={comida} alt="" width='100%' />
                         </Col>
@@ -42,7 +44,7 @@ function Sobre() {
                         </Col>
                     </Row>
 
-                    <Row>
+                    <Row className={styles.row_sobre}>
                         <Col>
                             <h2 style={{fontFamily: 'Raleway'}}>Um bar com uma grande variedade de bebidas</h2>
                             <p style={{fontFamily: 'Poppins'}}>
@@ -55,8 +57,8 @@ function Sobre() {
                     </Row>
                 </Container>
 
-                <Card style={{ width: '265px', left: '42%', backgroundColor: '#004F52', textAlign: 'center', marginTop: '2%' }}>
-                    <Card.Title style={{ fontSize: '40px', color: 'white', fontFamily: 'Poppins'}} >Contate-nos</Card.Title>
+                <Card className={styles.card} style={{backgroundColor:'#004F52'}}>
+                    <Card.Title  className={styles.card_title} >Contate-nos</Card.Title>
                 </Card>
                 <Container fluid="sm">
                     <Form.Label className='mt-5'>Nome de usuário</Form.Label>

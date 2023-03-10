@@ -11,13 +11,15 @@ import kara from '../../img/bandas/kara.png'
 import system from '../../img/bandas/system.png'
 import monkey from '../../img/bandas/monkey.png'
 import Footer from '../layout/Footer'
+import styles from './Musicas.module.css'
+
 
 function Musicas() {
     return (
         <>
             <Navbar />
-            <Card style={{ width: '270px', left: '42%', backgroundColor: '#004F52', textAlign: 'center', marginTop: '2%', paddingRight: '0' }}>
-                <Card.Title style={{ fontSize: '40px', color: 'white', fontFamily: 'Poppins' }} >Cronograma semanal</Card.Title>
+            <Card className={styles.card} style={{backgroundColor:'#004F52'}}>
+                <Card.Title className={styles.card_title} >Cronograma semanal</Card.Title>
             </Card>
 
 
