@@ -11,6 +11,7 @@
 .Container_produto {
     display: flex;
     justify-content: flex-start;
+    width: 90vw;
 }
 @media screen and (max-width: 767px) { 
     .Container_produto {

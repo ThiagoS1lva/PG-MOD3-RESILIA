@@ -3,16 +3,21 @@ import styles from './NewProjects.module.css'
 import ProjectForm from "../project/ProjectForm"
 import { useNavigate } from 'react-router-dom'
 import Footer from "../layout/Footer"
+import Loading from '../layout/Loading';
+import { useState, useEffect } from 'react'
 
 function NewProjects() {
 
+    const [loading, setLoading] = useState(true);
+    useEffect(() => {
+        //Simula tempo de carregamento
+        setTimeout(() => setLoading(false), 500);
+    }, []);
 
     const navigate = useNavigate()
     function createPost(project) {
         project.cost = 0
         project.services = []
-
-
         fetch("http://localhost:5000/novosProdutos", {
             method: 'POST',
             headers: {
@@ -31,13 +36,16 @@ function NewProjects() {
     return (
         <>
             <Navbar />
-
-            <div className={styles.newproject_container}>
-                <h1>Adicionar</h1>
-                <p>Crie seu produto para depois adiciona-lo</p>
-                <ProjectForm handleSubmit={createPost} btnText="Criar Produto" />
-            </div>
-            <Footer />
+            {loading ? <Loading /> :
+                <>
+                    <div className={styles.newproject_container}>
+                        <h1>Adicionar</h1>
+                        <p>Crie seu produto para depois adiciona-lo</p>
+                        <ProjectForm handleSubmit={createPost} btnText="Criar Produto" />
+                    </div>
+                    <Footer />
+                </>
+            }
         </>
     )
 }

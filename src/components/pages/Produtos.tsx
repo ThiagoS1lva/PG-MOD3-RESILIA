@@ -8,13 +8,15 @@ import ProjectCard from "../project/ProjectCard"
 import { useState, useEffect } from 'react'
 import { Container } from "react-bootstrap"
 import 'bootstrap/dist/css/bootstrap.css';
-
+import Loading from "../layout/Loading"
 
 function Produtos() {
 
 
     const [projects, setProjects] = useState([])
     const [projectMessage, setProjectMessage] = useState('')
+    const [removeLoading, setRemoveLoading] = useState(false)
+
 
     const location = useLocation()
     let message = ''
@@ -24,18 +26,23 @@ function Produtos() {
 
 
     useEffect(() => {
-        fetch("http://localhost:5000/novosProdutos", {
-            method: 'GET',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-        }).then(resp => resp.json())
-            .then(data => {
-                console.log(data)
-                setProjects(data)
-            })
-            .catch((err) => console.log(err))
+        setTimeout(
+            () => {
+                fetch("http://localhost:5000/novosProdutos", {
+                    method: 'GET',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                }).then(resp => resp.json())
+                    .then(data => {
+                        console.log(data)
+                        setProjects(data)
+                        setRemoveLoading(true)
+                    })
+                    .catch((err) => console.log(err))
 
+            }, 500
+        )
     }, [])
 
 
@@ -43,14 +50,14 @@ function Produtos() {
         fetch(`http://localhost:5000/novosProdutos/${id}`, {
             method: 'DELETE',
             headers: {
-                'Content-Type' : 'application/json'
+                'Content-Type': 'application/json'
             },
         }).then(resp => resp.json())
-        .then(() => {
-            setProjects(projects.filter((project) => project.id !== id  ))
-            setProjectMessage('Projeto removido com sucesso!')
-        })
-        .catch((err) => console.log(err))
+            .then(() => {
+                setProjects(projects.filter((project) => project.id !== id))
+                setProjectMessage('Projeto removido com sucesso!')
+            })
+            .catch((err) => console.log(err))
     }
 
 
@@ -78,6 +85,12 @@ function Produtos() {
                                 key={project.id}
                                 handleRemove={removeProject} />
                         ))
+                    }
+                    {!removeLoading && <Loading />}
+                    {removeLoading && projects.length === 0 && (
+                        <p>Não há produtos cadastrados</p>
+                    )
+
                     }
                 </Container>
             </div>
