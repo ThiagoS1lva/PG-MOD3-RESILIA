@@ -25,8 +25,8 @@ Métodos que podem ser utilizados:
 ## 📋 Tecnologias utilizadas
 
 * Vite APP;
-* HTML;
-* CSS;
+* HTML5;
+* CSS3;
 * React;
 * React DOM;
 * React Router DOM;
