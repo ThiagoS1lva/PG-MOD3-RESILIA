@@ -30,8 +30,8 @@ Métodos que podem ser utilizados:
 * React;
 * React DOM;
 * React Router DOM;
-* React Icons.
-* React Bootstrap.
+* React Icons;
+* React Bootstrap;
 * React Typescript.
 
 ## Link para acesso: https://pg-mod-3-resilia.vercel.app/
