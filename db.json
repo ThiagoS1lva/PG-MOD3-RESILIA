@@ -109,28 +109,5 @@
       "name": "musica"
     }
   ],
-  "novosProdutos": [
-    {
-      "name": "Thiagoasd",
-      "preço": "199",
-      "category": {
-        "id": "2",
-        "name": "bebidas"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 1
-    },
-    {
-      "name": "Giraoo123",
-      "preço": "22123",
-      "category": {
-        "id": "2",
-        "name": "bebidas"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 3
-    }
-  ]
+  "novosProdutos": []
 }

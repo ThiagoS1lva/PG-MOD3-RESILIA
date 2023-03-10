@@ -52,12 +52,22 @@ export function Navbar() {
             <div className={style.display}>
                 <ul className={style.ul}>
                     <Link to="/"><img src={logo} width="85px" /></Link>
-                    <Link to="/" className={style.li}><li ><a className={style.a} data-title="home">Home</a></li></Link>
-                    <Link to="/Sobre" className={style.li}><li><a className={style.a} data-title="Sobre">Sobre</a></li></Link>
-                    <Link to="/Musicas" className={style.li}><li ><a className={style.a} data-title="Atrações">Atrações</a></li></Link>
-                    <Link to="/Cardapio" className={style.li}><li ><a className={style.a} data-title="Cardapio">Cardápio</a></li></Link>
-                    <Link to="/novo" className={style.li}><li ><a className={style.a} data-title="Adicionar">Adicionar</a></li></Link>
-                    <Link to="/Produtos" className={style.li}><li ><a className={style.a} data-title="Meus Produtos">Meus Produtos</a></li></Link>
+
+                    <Link to="/" className={style.li}><li className={style.a} data-title="home" >Home</li></Link>
+
+                    <Link to="/Sobre" className={style.li}><li className={style.a} data-title="Sobre">Sobre</li></Link>
+
+                    <Link to="/Musicas" className={style.li}><li className={style.a} data-title="Atrações">Atrações</li></Link>
+
+
+                    <Link to="/Cardapio" className={style.li}><li className={style.a}data-title="Cardapio">Cardápio</li></Link>
+
+                    <Link to="/novo" className={style.li}><li className={style.a} data-title="Adicionar">Adicionar</li></Link>
+
+                    <Link to="/Produtos" className={style.li}><li className={style.a} data-title="Meus Produtos">Meus Produtos</li></Link>
+
+
+
                     <Button onClick={openCart} style={{ width: '3rem', height: "3rem", position: "relative" }} variant="outline-primary" className='rounded-circle'>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"

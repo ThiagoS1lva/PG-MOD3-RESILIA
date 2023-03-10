@@ -68,26 +68,26 @@
   z-index: -1;
 }
 
-.li:nth-child(2) a:after {
+.li:nth-child(2) .a:after {
   background: #ecc64b;
 }
 
-.li:nth-child(3) a:after {
+.li:nth-child(3) .a:after {
   background: #0b9ea6;
 }
 
-.li:nth-child(4) a:after {
+.li:nth-child(4) .a:after {
   background: #f26667;
 }
 
-.li:nth-child(5) a:after {
+.li:nth-child(5) .a:after {
   background: #0eaa16;
 }
 
-.li:nth-child(6) a:after {
+.li:nth-child(6) .a:after {
   background: #ca82eb;
 }
-.li:nth-child(7) a:after {
+.li:nth-child(7) .a:after {
   background: #ff7676;
 }
 

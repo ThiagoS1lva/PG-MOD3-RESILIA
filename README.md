@@ -26,7 +26,6 @@ Métodos que podem ser utilizados:
 * Vite APP;
 * HTML;
 * CSS;
-*
 * React;
 * React DOM;
 * React Router DOM;
