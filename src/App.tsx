@@ -6,6 +6,7 @@ import Musicas from './components/pages/Musicas'
 import {Carrinho} from './components/pages/Carrinho'
 import  NewProjects  from './components/pages/NewProjects'
 import Produtos from './components/pages/Produtos';
+import Produto from './components/pages/Produto';
 
 export function App() {
 
@@ -23,6 +24,9 @@ export function App() {
       <Route path='/novo' element={<ShoppingCartProvider><NewProjects/></ShoppingCartProvider>}></Route>
 
       <Route path='/Produtos' element={<ShoppingCartProvider><Produtos/></ShoppingCartProvider>}></Route>
+
+      <Route path='/Produto/:id' element={<ShoppingCartProvider><Produto/></ShoppingCartProvider>}></Route>
+
     </Routes>
 
   )

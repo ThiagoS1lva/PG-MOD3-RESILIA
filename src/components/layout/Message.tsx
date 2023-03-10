@@ -2,8 +2,8 @@ import styles from './Message.module.css'
 import { useState, useEffect } from 'react'
 
 type Message = {
-    type: string
-    msg: string
+    type: any
+    msg: any
 }
 
 function Message({ type, msg }: Message) {

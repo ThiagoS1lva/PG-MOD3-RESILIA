@@ -7,6 +7,8 @@
     margin-bottom: 2em;
 }
 
+
 .Container_produto {
+    display: flex;
     justify-content: flex-start;
 }

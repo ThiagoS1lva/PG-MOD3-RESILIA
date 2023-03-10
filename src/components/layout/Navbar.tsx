@@ -31,6 +31,8 @@ export function Navbar() {
                             <li><Link to="/Sobre" className={style.a}>Sobre</Link></li>
                             <li><Link to="/Musicas" className={style.a}>Atrações</Link></li>
                             <li><Link to="/Cardapio" className={style.a}>Cardápio</Link></li>
+                            <li><Link to="/novo" className={style.a}>Adicionar</Link></li>
+                            <li><Link to="/Produtos" className={style.a}>Meus Produtos</Link></li>
                             <Button onClick={openCart} style={{ width: '3rem', height: "3rem", position: "relative" }} variant="outline-primary" className='rounded-circle'>
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -55,6 +57,7 @@ export function Navbar() {
                     <Link to="/Musicas" className={style.li}><li ><a className={style.a} data-title="Atrações">Atrações</a></li></Link>
                     <Link to="/Cardapio" className={style.li}><li ><a className={style.a} data-title="Cardapio">Cardápio</a></li></Link>
                     <Link to="/novo" className={style.li}><li ><a className={style.a} data-title="Adicionar">Adicionar</a></li></Link>
+                    <Link to="/Produtos" className={style.li}><li ><a className={style.a} data-title="Meus Produtos">Meus Produtos</a></li></Link>
                     <Button onClick={openCart} style={{ width: '3rem', height: "3rem", position: "relative" }} variant="outline-primary" className='rounded-circle'>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"

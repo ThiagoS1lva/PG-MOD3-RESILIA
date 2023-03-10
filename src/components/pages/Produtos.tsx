@@ -7,12 +7,14 @@ import LinkButton from "../layout/LinkButton"
 import ProjectCard from "../project/ProjectCard"
 import { useState, useEffect } from 'react'
 import { Container } from "react-bootstrap"
+import 'bootstrap/dist/css/bootstrap.css';
+
 
 function Produtos() {
 
 
     const [projects, setProjects] = useState([])
-
+    const [projectMessage, setProjectMessage] = useState('')
 
     const location = useLocation()
     let message = ''
@@ -37,7 +39,19 @@ function Produtos() {
     }, [])
 
 
-
+    function removeProject(id) {
+        fetch(`http://localhost:5000/novosProdutos/${id}`, {
+            method: 'DELETE',
+            headers: {
+                'Content-Type' : 'application/json'
+            },
+        }).then(resp => resp.json())
+        .then(() => {
+            setProjects(projects.filter((project) => project.id !== id  ))
+            setProjectMessage('Projeto removido com sucesso!')
+        })
+        .catch((err) => console.log(err))
+    }
 
 
 
@@ -50,12 +64,19 @@ function Produtos() {
                     <LinkButton to='/novo' text='Novo Produto' />
                 </div>
                 {message && <Message type="success" msg={message} />}
+                {projectMessage && <Message type="success" msg={projectMessage} />}
 
 
                 <Container className={styles.Container_produto}>
                     {projects.length > 0 &&
-                        projects.map((projects) => (
-                            <ProjectCard name={projects.name} />
+                        projects.map((project) => (
+                            <ProjectCard
+                                id={project.id}
+                                name={project.name}
+                                preço={project.preço}
+                                category={project.category.name}
+                                key={project.id}
+                                handleRemove={removeProject} />
                         ))
                     }
                 </Container>
