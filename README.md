@@ -14,7 +14,6 @@
 * npm run backend 
 * npm run dev
 
-A webpage pode ser acessada por esse link:
 
 Métodos que podem ser utilizados:
 
